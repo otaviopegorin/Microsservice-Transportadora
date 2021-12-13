@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    password: 4810533669
+    url: jdbc:mysql://localhost:3306/pegorin-moveis
+    username: otaviopegorin
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  application:
+    name: 'transportadora'
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+     defaultZone: http://localhost:8761/eureka
+     
+
